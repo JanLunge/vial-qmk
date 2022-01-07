@@ -1,0 +1,27 @@
+{
+    "keyboard_name": "3by2",
+    "keyboard": "3by2",
+    "url": "https://blog.heaper.de/3d-printed-macropad/",
+    "maintainer": "wlard",
+    "width": 4,
+    "height": 4,
+    "keymap": "default",
+    "layouts": {
+        "LAYOUT_horizontal": {
+            "key_count": 6,
+            "layout": [
+                {
+                    "x": 0,
+                    "y": 0
+                }
+               
+            ]
+        }
+    },
+    "layers": [
+        [
+            "KC_F13"
+           
+        ]
+    ]
+}
