@@ -42,6 +42,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 };
 
+void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
+    const int led_index = 2;
+    switch(get_highest_layer(layer_state)) {
+        case 1:
+            rgb_matrix_set_color(led_index, RGB_WHITE);
+            break;
+        case 2:
+            rgb_matrix_set_color(led_index, RGB_BLUE);
+            break;
+        case 3:
+            rgb_matrix_set_color(led_index, RGB_GREEN);
+            break;
+        default:
+            break;
+    }
+}
+
 void raw_hid_receive_kb(uint8_t *data, uint8_t length) {
     if(data[0] == 0xFC){
         switch (data[1]) {
