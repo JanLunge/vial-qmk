@@ -54,6 +54,7 @@ static const qmk_settings_proto_t protos[] PROGMEM = {
 #endif
    DECLARE_SETTING(18, tap_code_delay),
    DECLARE_SETTING(19, tap_hold_caps_delay),
+   DECLARE_SETTING(20, tapping_toggle),
 };
 
 static const qmk_settings_proto_t *find_setting(uint16_t qsid) {
@@ -116,6 +117,7 @@ void qmk_settings_reset(void) {
     QS.tapping = 0;
     QS.tap_code_delay = TAP_CODE_DELAY;
     QS.tap_hold_caps_delay = TAP_HOLD_CAPS_DELAY;
+    QS.tapping_toggle = TAPPING_TOGGLE;
 
     save_settings();
     /* to trigger all callbacks */
@@ -184,4 +186,27 @@ bool get_retro_tapping(uint16_t keycode, keyrecord_t *record) {
 
 uint16_t get_combo_term(uint16_t index, combo_t *combo) {
     return QS.combo_term;
+}
+
+bool get_auto_shifted_key(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case AUTO_SHIFT_ALPHA:
+            if (!QS_auto_shift_no_auto_shift_alpha) return true;
+            break;
+        case AUTO_SHIFT_NUMERIC:
+            if (!QS_auto_shift_no_auto_shift_numeric) return true;
+            break;
+        case AUTO_SHIFT_SPECIAL:
+            if (!QS_auto_shift_no_auto_shift_special) return true;
+            break;
+    }
+    return false;
+}
+
+bool get_auto_shift_repeat(uint16_t keycode, keyrecord_t *record) {
+    return QS_auto_shift_repeat;
+}
+
+bool get_auto_shift_no_auto_repeat(uint16_t keycode, keyrecord_t *record) {
+    return QS_auto_shift_no_auto_repeat;
 }
