@@ -8,7 +8,6 @@
     "keymap": "default",
     "layouts": {
         "LAYOUT_horizontal": {
-            "key_count": 6,
             "layout": [
                 {
                     "x": 0,

@@ -1,11 +1,11 @@
 {
-    "keyboard_name": "3by2",
-    "keyboard": "3by2",
-    "url": "https://blog.heaper.de/3d-printed-macropad/",
+    "keyboard_name": "w65",
+    "keyboard": "w65",
+    "url": "https://github.com/wlard",
     "maintainer": "wlard",
-    "width": 3,
-    "height": 2,
-    "keymap": "default",
+    "width": 16,
+    "height": 5,
+    "keymap": "vial",
     "layouts": {
         "LAYOUT_horizontal": {
             "layout": [
