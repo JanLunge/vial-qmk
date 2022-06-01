@@ -24,5 +24,3 @@ RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
 AUDIO_ENABLE = no           # Audio output
 
 DEFAULT_FOLDER = wlard/w65
-
-LAYOUTS = ortho_1x1
