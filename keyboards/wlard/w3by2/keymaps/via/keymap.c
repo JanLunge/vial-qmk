@@ -42,20 +42,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 };
 
-void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
+bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     const int led_index = 2;
     switch(get_highest_layer(layer_state)) {
         case 1:
             rgb_matrix_set_color(led_index, RGB_WHITE);
-            break;
+            return true;
         case 2:
             rgb_matrix_set_color(led_index, RGB_BLUE);
-            break;
+            return true;
         case 3:
             rgb_matrix_set_color(led_index, RGB_GREEN);
-            break;
+            return true;
         default:
-            break;
+            return false;
     }
 }
 
