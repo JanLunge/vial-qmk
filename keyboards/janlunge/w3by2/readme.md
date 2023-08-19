@@ -34,10 +34,6 @@ If you're interested in contributing or want to discuss features and improvement
 
 ---
 
-Let this be a starting point. You can further enhance the README by adding sections about how to setup, install, or customize the keyboard, and possibly adding images or GIFs showcasing the keyboard in action.
-
----
-
 ## Layer LED controls
 switching the layers toggles the color of one of the leds as an indicator by default the rotary knob button is the layer switcher
 
