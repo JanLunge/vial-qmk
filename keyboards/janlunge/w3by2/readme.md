@@ -1,18 +1,18 @@
 # 🎹 w3by2: Compact Mechanical Keypad
-(Website)[https://blog.heaper.de/e/w3by2]
+[Website](https://blog.heaper.de/e/w3by2)
 
-
+```
 ┌─────────┬─────────┬─────────┐
 │   K00   │   K01   │   K02   │
 ├─────────┼─────────┼─────────┤ Encoder
 │   K03   │   K04   │   K05   │ ( K06 )
 └─────────┴─────────┴─────────┘ 
-
+```
 
 
 ## Overview 🌐
 
-**w3by2** is a beautifully compact 6-key mechanical keypad tailored for a . 
+**w3by2** is a beautifully compact 6-key mechanical keypad. 
 
 💡 **What's New?** Now enhanced with a rotary encoder support, adding dynamic control right at your fingertips!
 
