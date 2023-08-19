@@ -1,11 +1,11 @@
 {
     "keyboard_name": "w65",
     "keyboard": "w65",
-    "url": "https://github.com/wlard",
-    "maintainer": "wlard",
+    "url": "https://github.com/janlunge",
+    "maintainer": "Jan Lunge",
     "width": 16,
     "height": 5,
-    "keymap": "vial",
+    "keymap": "default",
     "layouts": {
         "LAYOUT_horizontal": {
             "layout": [
