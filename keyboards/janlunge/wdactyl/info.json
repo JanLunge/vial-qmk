@@ -1,11 +1,18 @@
 {
-    "keyboard_name": "wSplit",
-    "keyboard": "wSplit",
-    "url": "https://blog.heaper.de/wsplit/",
-    "maintainer": "wlard",
+    "keyboard_name": "wDactyl",
+    "manufacturer": "Jan Lunge",
+    "keyboard": "wDactyl",
+    "url": "https://blog.heaper.de/wDactyl/",
+    "maintainer": "Jan Lunge",
     "width": 12,
     "height": 5,
     "keymap": "default",
+    "diode_direction": "COL2ROW",
+    "usb":{
+        "pid": "0xDEEB",
+        "vid": "0xEEEE",
+        "device_version": "1.0.0"
+    },
     "layouts": {
        
     },
