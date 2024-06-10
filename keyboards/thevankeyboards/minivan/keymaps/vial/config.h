@@ -27,7 +27,7 @@
 #define USB_MAX_POWER_CONSUMPTION 100
 #define PERMISSIVE_HOLD
 #define RGB_DI_PIN D0
-#define RGBLED_NUM 3
+#define RGBLIGHT_LED_COUNT 3
 #define RGBLIGHT_ANIMATIONS
 #define RGBLIGHT_SLEEP
 #define IS_COMMAND() ( keyboard_report->mods == (MOD_BIT(KC_LSFT) | MOD_BIT(KC_RSFT)) )

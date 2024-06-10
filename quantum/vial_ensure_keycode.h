@@ -310,6 +310,18 @@ _Static_assert(OSM(MOD_LSFT|MOD_LALT|MOD_LGUI) == 0x52AE, "");
 _Static_assert(OSM(MOD_MEH) == 0x52A7, "");
 _Static_assert(OSM(MOD_HYPR) == 0x52AF, "");
 
+_Static_assert(LT(1, KC_A) == 0x4104, "");
+_Static_assert(TO(1) == 0x5201, "");
+_Static_assert(MO(1) == 0x5221, "");
+_Static_assert(DF(1) == 0x5241, "");
+_Static_assert(TG(1) == 0x5261, "");
+_Static_assert(OSL(1) == 0x5281, "");
+_Static_assert(LM(1, KC_A) == 0x5024, "");
+_Static_assert(OSM(MOD_RSFT) == 0x52B2, "");
+_Static_assert(TT(1) == 0x52C1, "");
+_Static_assert(MT(MOD_RSFT, KC_A) == 0x3204, "");
+_Static_assert(TD(1) == 0x5701, "");
+
 _Static_assert(KC_NO == 0x00, "");
 _Static_assert(KC_TRNS == 0x01, "");
 _Static_assert(KC_NUMLOCK == 0x53, "");

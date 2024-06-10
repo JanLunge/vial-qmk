@@ -93,16 +93,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 #ifdef RGBLIGHT_LAYERS
 const rgblight_segment_t PROGMEM my_layerQW_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0, RGBLED_NUM, HSV_OFF}
+    {0, RGBLIGHT_LED_COUNT, HSV_OFF}
 );
 const rgblight_segment_t PROGMEM my_layerLW_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0, RGBLED_NUM, HSV_CYAN}
+    {0, RGBLIGHT_LED_COUNT, HSV_CYAN}
 );
 const rgblight_segment_t PROGMEM my_layerRS_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0, RGBLED_NUM, HSV_RED}
+    {0, RGBLIGHT_LED_COUNT, HSV_RED}
 );
 const rgblight_segment_t PROGMEM my_layerAD_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0, RGBLED_NUM, HSV_GREEN}
+    {0, RGBLIGHT_LED_COUNT, HSV_GREEN}
 );
 
 // Now define the array of layers. Later layers take precedence

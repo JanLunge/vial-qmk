@@ -14,11 +14,22 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "keymap_common.h"
-#include "print.h"
 #include "process_combo.h"
+#include <stddef.h>
+#include "process_auto_shift.h"
+#include "caps_word.h"
+#include "timer.h"
+#include "wait.h"
+#include "keyboard.h"
+#include "keymap_common.h"
+#include "action_layer.h"
 #include "action_tapping.h"
+#include "action_util.h"
 #include "action.h"
+
+#ifdef VIAL_ENABLE
+#include "vial.h"
+#endif
 
 #ifdef VIAL_COMBO_ENABLE
 #include "dynamic_keymap.h"
@@ -569,7 +580,7 @@ bool process_combo(uint16_t keycode, keyrecord_t *record) {
     /* Only check keycodes from one layer. */
     keycode = keymap_key_to_keycode(COMBO_ONLY_FROM_LAYER, record->event.key);
 #else
-    uint8_t  highest_layer = get_highest_layer(layer_state);
+    uint8_t  highest_layer = get_highest_layer(layer_state | default_layer_state);
     uint8_t  ref_layer     = combo_ref_from_layer(highest_layer);
     if (ref_layer != highest_layer) {
         keycode = keymap_key_to_keycode(ref_layer, record->event.key);

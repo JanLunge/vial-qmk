@@ -18,6 +18,11 @@
 *.lst
 *.map
 *.o
+*.a
+*.so
+*.dylib
+*.dll
+*.la
 *.stackdump
 *.sym
 
@@ -96,7 +101,7 @@ secrets.tar
 # Python things
 __pycache__
 .python-version
-.venv/
+.venv
 
 # Prerequisites for updating ChibiOS
 /util/fmpp*
